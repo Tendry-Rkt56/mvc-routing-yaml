@@ -15,6 +15,7 @@ class ComposerStaticInit01f91d89a1f45da22c55caa32eccd8f3
         array (
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\Yaml\\' => 23,
+            'Services\\' => 9,
         ),
         'A' => 
         array (
@@ -30,6 +31,10 @@ class ComposerStaticInit01f91d89a1f45da22c55caa32eccd8f3
         'Symfony\\Component\\Yaml\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
+        ),
+        'Services\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/services',
         ),
         'App\\' => 
         array (
