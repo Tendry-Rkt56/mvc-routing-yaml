@@ -1,5 +1,6 @@
 <?php
 
+use App\Controller\ErrorController;
 use Services\LoaderFile;
 
 require_once '../vendor/altorouter/altorouter/AltoRouter.php';
@@ -33,5 +34,6 @@ if ($match) {
     }
 } else {
     header("HTTP/1.0 404 Not Found");
-    echo "Page non trouvée.";
+    $controller = new ErrorController();
+    $controller->index();
 }
