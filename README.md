@@ -28,7 +28,7 @@ Clonez ce repository dans un répertoire local :
 1. **Cloner le dépôt**
 
    ```bash
-   git clone https://github.com/Tendry-Rkt56/laravel-blogify.git
+   git clone https://github.com/Tendry-Rkt56/mvc-routing-yaml.git
 
 2. **Naviguer dans le dossier du projet**
 
