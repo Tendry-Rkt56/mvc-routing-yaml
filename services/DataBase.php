@@ -12,7 +12,13 @@ class DataBase
           LoaderFile::set("constante", '../config/Constante.yaml');
           $constante = LoaderFile::get("constante")['database'];
           extract($constante);
-          $this->conn = new \PDO('mysql:host='.$host.";dbname=".$dbName.";charset=$charset", $user, $password);     
+          try {
+               $this->conn = new \PDO("mysql:host=".$host.";dbname=".$dbName.";charset=utf8", $user, $password);     
+               $this->conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+          }
+          catch(\PDOException $e){
+               echo "Erreur de connexion à la base de données : " . $e->getMessage();
+          }
      }
 
      public function getDb(): \PDO

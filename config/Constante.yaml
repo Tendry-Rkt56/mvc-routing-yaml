@@ -1,6 +1,6 @@
 database: 
   host: localhost
   user: root
-  dbName: dbName
+  dbName: agence
   password: root
   charset: ut8
