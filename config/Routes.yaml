@@ -1,0 +1,10 @@
+Routes:
+  - name: home
+    method: GET
+    path: /
+    handler: App\Controller\ArticleController::index
+  
+  - name: home
+    method: GET
+    path: /
+    handler: App\Controller\ArticleController::index
