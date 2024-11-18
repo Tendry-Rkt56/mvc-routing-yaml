@@ -39,7 +39,7 @@ Clonez ce repository dans un répertoire local :
 
 4. **Charger les routes**
     Les routes de l'application sont définies dans le fichier `config/Routes.yaml`. Exemple de contenu
-    ![illustration](illustrations/constante.png)
+    ![illustration](illustrations/routes.png)
 
 5. **Lancer le serveur de développement**
     
