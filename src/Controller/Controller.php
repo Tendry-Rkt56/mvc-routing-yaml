@@ -5,6 +5,11 @@ namespace App\Controller;
 class Controller
 {
 
+     public function __construct()
+     {
+          if (session_status() == PHP_SESSION_NONE) session_start();
+     }
+
      protected function render(string $view, array $data = [], bool $html = false)
      {
           extract($data);
