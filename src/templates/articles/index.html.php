@@ -18,13 +18,24 @@
                justify-content: center;
                flex-direction: column;
           }
+
+          .articles {
+               display: flex;
+               align-items:center;
+               justify-content: center;
+               gap:10px;
+               flex-direction:row;
+               flex-wrap: wrap;
+          }
      </style>
 
      <div class="containers">
           <h1>Les articles...</h1>
-          <?php for($i = 1; $i <= 10; $i++): ?>
-               <a style="margin:10px 10px;" href="/articles/<?=$i?>">Article <?=$i?></a>
-          <?php endfor ?>
+          <div class="articles">
+               <?php for($i = 1; $i <= 10; $i++): ?>
+                    <a style="margin:5px 10px;" href="/articles/<?=$i?>">Article <?=$i?></a>
+               <?php endfor ?>
+          </div>
      </div>
 
 </body>
