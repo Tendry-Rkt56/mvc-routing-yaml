@@ -22,6 +22,7 @@
 
      <div class="containers">
           <h1>Les articles...</h1>
+          <a href="/articles">Les articles</a>
      </div>
 
 </body>
