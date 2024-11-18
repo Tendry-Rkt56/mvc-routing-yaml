@@ -1,10 +1,10 @@
 routes:
   - name: home
     method: GET
-    path: /articles/[i:id]
+    path: /articles
     handler: App\Controller\ArticleController::index
   
   - name: home.index
     method: GET
     path: /
-    handler: App\Controller\ArticleController::index
+    handler: App\Controller\HomeController::index
