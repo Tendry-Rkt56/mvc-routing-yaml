@@ -10,4 +10,11 @@ class ArticleController extends Controller
           return $this->render('articles.index');
      }
 
+     public function show(int $id)
+     {
+          return $this->render('articles.show', [
+               'id' => $id,
+          ]);
+     }
+
 }
