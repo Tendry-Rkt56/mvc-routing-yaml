@@ -1,8 +1,13 @@
 routes:
-  - name: home
+  - name: articles.index
     method: GET
     path: /articles
     handler: App\Controller\ArticleController::index
+  
+  - name: articles.show
+    method: GET
+    path: /articles/[i:id]
+    handler: App\Controller\ArticleController::show
   
   - name: home.index
     method: GET
