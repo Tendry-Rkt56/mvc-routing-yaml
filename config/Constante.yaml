@@ -1,0 +1,6 @@
+database: 
+  host: localhost
+  user: root
+  dbName: dbName
+  password: root
+  charset: ut8
