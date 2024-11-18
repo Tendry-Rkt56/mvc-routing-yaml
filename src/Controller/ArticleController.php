@@ -2,12 +2,18 @@
 
 namespace App\Controller;
 
+use App\Entity\Article;
+use App\Manager;
+
 class ArticleController extends Controller
 {
 
      public function index()
      {
-          return $this->render('articles.index', [], true);
+          $articles = Manager::get()->getEntity(Article::class)->findAll();
+          return $this->render('articles.index', [
+               'articles' => $articles,
+          ], true);
      }
 
      public function show(int $id)
