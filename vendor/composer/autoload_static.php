@@ -11,22 +11,18 @@ class ComposerStaticInit01f91d89a1f45da22c55caa32eccd8f3
     );
 
     public static $prefixLengthsPsr4 = array (
-        'T' => 
-        array (
-            'Tendry\\YamlRoutes\\' => 18,
-        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\Yaml\\' => 23,
         ),
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Tendry\\YamlRoutes\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-        ),
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
@@ -34,6 +30,10 @@ class ComposerStaticInit01f91d89a1f45da22c55caa32eccd8f3
         'Symfony\\Component\\Yaml\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
