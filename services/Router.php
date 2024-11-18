@@ -26,13 +26,17 @@ $match = $router->match();
 if ($match) {
     list($controller, $method) = explode('::', $match['target']);
     if (class_exists($controller) && method_exists($controller, $method)) {
-        // Appeler la méthode du contrôleur
-        call_user_func_array([new $controller, $method], $match['params']);
-    } else {
+
+          $params = array_merge($_GET, $_POST, $match['params']);
+          call_user_func_array([new $controller, $method], $params);
+    
+     } 
+     else {
         header("HTTP/1.0 500 Internal Server Error");
         echo "Erreur : méthode ou classe introuvable.";
     }
-} else {
+}
+else {
     header("HTTP/1.0 404 Not Found");
     $controller = new ErrorController();
     $controller->index();
