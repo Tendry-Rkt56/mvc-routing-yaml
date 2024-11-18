@@ -1,0 +1,15 @@
+{
+    "name": "tendry/yaml-routes",
+    "autoload": {
+        "psr-4": {
+            "Tendry\\YamlRoutes\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tendry",
+            "email": "tendryzephyrin@gmail.com"
+        }
+    ],
+    "require": {}
+}
