@@ -2,7 +2,8 @@
     "name": "tendry/yaml-routes",
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "App\\": "src/",
+            "Services\\": "services/"
         }
     },
     "authors": [
