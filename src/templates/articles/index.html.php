@@ -22,7 +22,9 @@
 
      <div class="containers">
           <h1>Les articles...</h1>
-          <a href="/articles">Les articles</a>
+          <?php for($i = 1; $i <= 10; $i++): ?>
+               <a style="margin:10px 10px;" href="/articles/<?=$i?>">Article <?=$i?></a>
+          <?php endfor ?>
      </div>
 
 </body>

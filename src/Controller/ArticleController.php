@@ -7,7 +7,7 @@ class ArticleController extends Controller
 
      public function index()
      {
-          return $this->render('articles.index');
+          return $this->render('articles.index', [], true);
      }
 
      public function show(int $id)
