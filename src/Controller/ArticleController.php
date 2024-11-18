@@ -14,7 +14,7 @@ class ArticleController extends Controller
      {
           return $this->render('articles.show', [
                'id' => $id,
-          ]);
+          ], true);
      }
 
 }
